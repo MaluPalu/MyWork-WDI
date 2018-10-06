@@ -1,0 +1,12 @@
+#animated-div {
+  width: 500px;
+  height: 500px;
+  border: #000 1px solid;
+  background-color: blue;
+}
+#animate-slide {
+  width: 200px;
+  height: 200px;
+  border: #000 1px solid;
+  background-color: orange;
+}

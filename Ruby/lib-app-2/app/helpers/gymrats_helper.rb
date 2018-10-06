@@ -1,0 +1,2 @@
+module GymratsHelper
+end

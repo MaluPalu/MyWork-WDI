@@ -1,0 +1,32 @@
+<%= form_with(model: turkey, local: true) do |form| %>
+  <% if turkey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(turkey.errors.count, "error") %> prohibited this turkey from being saved:</h2>
+
+      <ul>
+      <% turkey.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_field :color, id: :turkey_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :turkey_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heritage %>
+    <%= form.check_box :heritage, id: :turkey_heritage %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

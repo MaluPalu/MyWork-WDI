@@ -1,0 +1,2 @@
+module GoldenrodHelper
+end

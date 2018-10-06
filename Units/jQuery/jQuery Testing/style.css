@@ -1,0 +1,10 @@
+#animated-div {
+  width: 200px;
+  height: 200px;
+  border: #000 1px solid;
+}
+.animate {
+  background-color: red !important;
+  transition: all 1s ease-in-out;
+  transform: rotate(360deg) scale(.5);
+}

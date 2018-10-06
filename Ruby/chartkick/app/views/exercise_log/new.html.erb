@@ -1,0 +1,12 @@
+<%= form_for @exercise_log do |f| %>
+  <div>
+    <%= f.text_field :duration, placeholder: "Duration" %>
+  </div>
+  <div>
+    <%= f.text_field :exercise_type, placeholder: "Type of Exercise" %>
+  </div>
+  <div>
+    <%= f.text_field :date_of, placeholder: "Date Completed" %>
+  </div>
+  <%= f.submit "Add Exercise" %>
+<% end %>

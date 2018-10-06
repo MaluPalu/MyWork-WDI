@@ -1,0 +1,83 @@
+.number {
+  color: #5cc8ff;
+  background-color: black;
+  border: none;
+  float: left;
+}
+
+.operator {
+  color: #d63c6b;
+  background-color: black;
+  border: none;
+  float: left;
+}
+
+.keys {
+  width: 300px;
+  position:absolute;
+  overflow-y: auto;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: black;
+  margin: 1px;
+}
+
+.operator {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: black;
+  margin: 1px;
+}
+
+.buttons {
+  width:40px;
+  height:30px;
+  border:none;
+  position: relative;
+  border-radius:8px;
+  margin-left:17px;
+  cursor:pointer;
+  border-top:2px solid transparent;
+}
+
+.calculator {
+  margin-left: auto;
+  margin-right: auto;
+  height:300px;
+  width:250px;
+  border-radius:10px;
+  /*position:relative;*/
+  top:80px;
+  left:40%;
+}
+
+.numDisplay {
+  background-color:black;
+  margin-left: 18px;
+  border:none;
+
+  width: 255px;
+  left:2px;
+  top:2px;
+  height:50px;
+  font-size:35px;
+  text-align:right;
+}
+
+input, select, type {
+  color: #5cc8ff;
+  font-size: 24px;
+}
+
+.number:hover {
+  background-color: #d63c6b;
+}
+
+.operator:hover {
+  background-color: #5cc8ff;
+}

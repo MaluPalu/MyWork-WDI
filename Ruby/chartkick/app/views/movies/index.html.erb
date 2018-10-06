@@ -1,0 +1,38 @@
+Welcome to Movies
+<%= link_to "Add Movie", new_movies_path %>
+<form>
+  <input id="movies_search" autocomplete="off" type="text" name="term"/>
+  <button type="submit">Search</button>
+ </form>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<% @movies.each do |movie| %>
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>Movie Title</dt>
+      <dd><%= movie.title %></dd>
+
+      <dt>Year Released</dt>
+      <dd><%= movie.year_released %></dd>
+
+      <dt>Runtime</dt>
+      <dd><%= movie.runtime %></dd>
+
+      <dt>Plot</dt>
+      <dd><%= movie.plot %></dd>
+
+    </dl>
+
+  </div>
+</div>
+<% end %>

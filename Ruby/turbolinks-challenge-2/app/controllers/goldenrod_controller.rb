@@ -1,0 +1,2 @@
+class GoldenrodController < ApplicationController
+end

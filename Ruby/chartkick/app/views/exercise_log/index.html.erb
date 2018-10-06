@@ -1,0 +1,34 @@
+<h1> Welcome to ChartKick Gem Tutorial <h2>
+<%= link_to "Movie Page", movies_path %>
+<%= link_to "Add Exercise for Today", new_exercises_path %>
+<br />
+
+<%# .group() tries to return all the columns in the table. So you either need to 'aggregate' or .select() (filters columns) %>
+<%= pie_chart @exercise_logs.group(:exercise_type).sum(:duration) %>
+<%= bar_chart @exercise_logs.group(:exercise_type).average(:duration) %>
+<%# .map iterates through each result and yields data back to line_chart %>
+<%# line 13 runs X times equal to the amount of :exercise_types selected %>
+<%# .where() (filters rows) %>
+<%# data: needs @exercise_logs because we need to select the values for :date_of and :duration which |exercise| does not have%>
+<%= line_chart @exercise_logs.group(:exercise_type).select(:exercise_type).map { |exercise|
+    {name: exercise.exercise_type, data: @exercise_logs.where({exercise_type: exercise.exercise_type}).group_by_day(:date_of).sum(:duration)}
+} %>
+<% @exercise_logs.each do |exercise| %>
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <%= Time.now.strftime("%Y-%d-%m") %>
+      <dt>Category</dt>
+      <dd><%= exercise.exercise_type %></dd>
+
+      <dt>Duration</dt>
+      <dd><%= exercise.duration %></dd>
+
+      <dt>Date Completed</dt>
+      <dd><%= exercise.date_of %></dd>
+
+    </dl>
+
+  </div>
+</div>
+<% end %>

@@ -1,0 +1,5 @@
+<section>
+  <h3>Enter Code</h3>
+<input [(ngModel)]="code" type="text" maxlength="2" id="query" (keyup)="findMatchingSoda(code)" />
+
+<p *ngIf="selectedSoda">{{selectedSoda.name}} was selected.</p>

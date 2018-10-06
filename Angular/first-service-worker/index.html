@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <img src="DarthSwagger.jpg">
+    <script>
+    // 1
+    if ('serviceWorker' in navigator) {
+    // 2
+      window.addEventListener('load', function() {
+      // 3
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+      // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+    </script>
+  </body>
+</html>

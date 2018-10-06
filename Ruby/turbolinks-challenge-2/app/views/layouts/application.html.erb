@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavascriptExplorerRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="container">
+
+<h1>
+  <%= yield :heading %>
+</h1>
+
+<div class="row">
+  <div class="col-md-3">
+    <ul class="list-group col-md-12">
+      <li id="home" class="list-group-item">
+        <%= link_to_unless_current "Home", {controller: "welcome", action: "index"} %>
+        <span class="view_count badge"></span>
+      </li>
+      <li id="goldenrod" class="list-group-item">
+        <%= link_to "Goldenrod", gold_path %>
+        <span class="view_count badge"></span>
+      </li>
+      <li id="lightcoral" class="list-group-item">
+        <%= link_to "Lightcoral", coral_path %>
+        <span class="view_count badge"></span>
+      </li>
+      <li id="lightseagreen" class="list-group-item">
+        <%= link_to "Lightseagreen", seagreen_path %>
+        <span class="view_count badge"></span>
+      </li>
+    </ul>
+  </div>
+  <div class="well col-md-8 col-md-offset-1">
+    <%= yield %>
+  </div>
+</div>
+
+
+
+</body>
+</html>

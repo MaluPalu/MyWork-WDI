@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO List</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<div class="small-container well">
+	<div class="bold">
+		What do you want to do today?
+	</div>
+<form method="POST" action="/tasks">
+	<div class="margin-top-20">
+		<input type="text" class="form-control" name="name" placeholder="Your todo..." />
+	</div>
+
+	<div class="margin-top-20">
+		<button type="submit" id="submit-todo" class="btn btn-primary">Submit Todo</button>
+	</div>
+</form>
+</div>
+<div id="todo-list" class="small-container">
+	<ol>
+	<% tasks.forEach((task) => { %>
+		<li><%= task.name %><a href="#">Delete</a></li>
+	<% }); %>
+	</ol>
+</div>
+</body>
+</html>

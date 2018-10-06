@@ -1,0 +1,2 @@
+class Turkey < ApplicationRecord
+end

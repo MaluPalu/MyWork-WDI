@@ -1,0 +1,15 @@
+<%= form_for @movie do |f| %>
+  <div>
+    <%= f.text_field :title, placeholder: "Movie Title" %>
+  </div>
+  <div>
+    <%= f.text_field :year_released, placeholder: "Year Released" %>
+  </div>
+  <div>
+    <%= f.text_field :runtime, placeholder: "Runtime" %>
+  </div>
+  <div>
+    <%= f.text_field :plot, placeholder: "Plot" %>
+  </div>
+  <%= f.submit "Add Movie" %>
+<% end %>

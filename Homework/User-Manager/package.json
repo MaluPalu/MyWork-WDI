@@ -1,0 +1,27 @@
+{
+  "name": "user-manager",
+  "version": "1.0.0",
+  "description": "In this project we will be creating a user manager application using the front end created for you here. Your job is to make the functionality work as follows:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arun-projects/User-Manager.git"
+  },
+  "author": "Malu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arun-projects/User-Manager/issues"
+  },
+  "homepage": "https://github.com/arun-projects/User-Manager#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}

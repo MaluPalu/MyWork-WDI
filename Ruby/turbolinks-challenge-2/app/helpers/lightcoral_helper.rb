@@ -1,0 +1,2 @@
+module LightcoralHelper
+end

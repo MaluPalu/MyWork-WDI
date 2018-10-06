@@ -1,0 +1,9 @@
+<h1>Show Pet</h1>
+<hr>
+<p><strong>Name:</strong> Name: <%= @pet.name %>.  Breed: <%= @pet.breed %></p>
+<%= @pet.appointments.each do |appointment| %>
+  <p>
+    <strong><%= link_to "#{appointment.veterinarian} #{appointment.reason}", pet_appointment_path(pet) %></strong>
+  </p>
+<% end %>
+ <%= link_to "New Appointment", new_pet_appointment_path(@pet) %>

@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Sprite",
+<<<<<<< Updated upstream
+      "cost": 50,
+      "remaining": 8,
+=======
+      "cost": 0.5,
+      "remaining": 9,
+>>>>>>> Stashed changes
+      "code": "A1"
+    },
+    {
+      "id": 2,
+      "name": "Coke",
+<<<<<<< Updated upstream
+      "cost": 50,
+      "remaining": 9,
+=======
+      "cost": 0.5,
+      "remaining": 10,
+>>>>>>> Stashed changes
+      "code": "B2"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Pepper",
+<<<<<<< Updated upstream
+      "cost": 75,
+=======
+      "cost": 0.75,
+>>>>>>> Stashed changes
+      "remaining": 10,
+      "code": "C3"
+    },
+    {
+      "id": 4,
+      "name": "Mr Pibbs",
+<<<<<<< Updated upstream
+      "cost": 50,
+      "remaining": 8,
+=======
+      "cost": 0.5,
+      "remaining": 10,
+>>>>>>> Stashed changes
+      "code": "D4"
+    }
+  ]
+}

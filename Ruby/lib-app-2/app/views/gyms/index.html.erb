@@ -1,0 +1,8 @@
+<h1>Check out the gyms nearby: <% @gyms.each do |gym| %></h1>
+<div>
+  <%= gym.name %>
+    <% if current_user %>
+      <%= button_to "Join", library_users_path(library) %>
+    <% end %>
+</div>
+<% end %>

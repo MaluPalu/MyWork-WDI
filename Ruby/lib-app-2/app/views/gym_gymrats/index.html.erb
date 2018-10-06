@@ -1,0 +1,7 @@
+<div><%= @gymrat.first_name %> is a member of the following gyms</div>
+
+<ul>
+  <% @gyms.each do |gym| %>
+    <li><%= gym.name %></li>
+  <% end %>
+</ul>

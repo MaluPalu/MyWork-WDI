@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @turkey.color %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @turkey.name %>
+</p>
+
+<p>
+  <strong>Heritage:</strong>
+  <%= @turkey.heritage %>
+</p>
+
+<%= link_to "See this turkey", turkey_path(@turkey) %>
+<%= button_to "See this turkey", turkey_path(@turkey) %>
+
+<%= link_to 'Edit', edit_turkey_path(@turkey) %> |
+<%= link_to 'Back', turkeys_path %>

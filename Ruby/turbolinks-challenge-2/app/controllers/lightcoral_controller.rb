@@ -1,0 +1,2 @@
+class LightcoralController < ApplicationController
+end

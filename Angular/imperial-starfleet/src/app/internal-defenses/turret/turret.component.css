@@ -1,0 +1,21 @@
+.turret1 {
+  position: absolute;
+}
+
+.turret2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.turret3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.turret4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

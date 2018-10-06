@@ -1,0 +1,65 @@
+section {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid {
+  float: left;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.instructions {
+  float: right;
+  width: 20%;
+}
+
+table {
+  margin: auto;
+}
+
+table tr td {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.btn {
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid #777;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#coding-area {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 1em;
+  border: 1px dashed grey;
+}
+
+#coding-area.has-error {
+  border-color: red;
+}
+#coding-area.has-error::after {
+  display: block;
+  font-weight: bold;
+  color: red;
+  content: "Oh no! There's an error in your Javascript!";
+  text-align: right;
+}

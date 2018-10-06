@@ -1,0 +1,2 @@
+class LightseagreenController < ApplicationController
+end

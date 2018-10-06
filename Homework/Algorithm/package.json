@@ -1,0 +1,15 @@
+{
+  "name": "algorithm",
+  "version": "0.0.1",
+  "description": "Algorith problem set for WDI 40",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha spec"
+  },
+  "author": "Malu",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}

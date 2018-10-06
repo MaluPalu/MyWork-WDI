@@ -1,0 +1,20 @@
+<h2>Add a Manager</h2>
+
+<div>
+<label for="name">Name</label><input type="text"
+id="name" [(ngModel)]="manager.name" />
+</div>
+<div>
+<label for="email">Email</label><input type="text"
+id="email" [(ngModel)]="manager.email" />
+</div>
+<div>
+<label for="office-number">Office Number</label><input type="text"
+id="office-number" [(ngModel)]="manager.office_number" />
+</div>
+<div>
+<label for="cell_phone_number">Cell Phone Number</label><input type="text"
+id="cell_phone_number" [(ngModel)]="manager.cell_phone_number" />
+</div>
+
+<button (click)="createManager(manager)">Save</button>
